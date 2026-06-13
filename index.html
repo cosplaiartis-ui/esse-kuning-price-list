@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price List | Esse Kuning • Premium Deepfake & Cersex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
+        
+        :root {
+            --gold: #D4AF37;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+
+        .premium-gradient {
+            background: linear-gradient(135deg, #0a0a0a 0%, #111111 100%);
+        }
+
+        .gold-text {
+            color: #D4AF37;
+        }
+
+        .section-header {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.04em;
+        }
+
+        .pricing-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+        }
+
+        .pricing-card.popular {
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 1px #D4AF37;
+        }
+
+        .benefit-item {
+            transition: all 0.2s ease;
+        }
+
+        .nav-scrolled {
+            background-color: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(12px);
+        }
+
+        .price-number {
+            font-size: 2.75rem;
+            line-height: 1;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+        }
+
+        .tier-badge {
+            font-size: 0.75rem;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+
+        .premium-shadow {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3),
+                        0 4px 6px -4px rgb(0 0 0 / 0.3);
+        }
+
+        .gold-accent {
+            color: #D4AF37;
+        }
+
+        .dark-bg {
+            background-color: #0a0a0a;
+        }
+
+        .subtle-grid {
+            background-image: 
+                linear-gradient(rgba(212, 175, 55, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(212, 175, 55, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+    </style>
+</head>
+<body class="bg-[#0a0a0a] text-white">
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="flex items-center">
+                        <span class="font-black text-4xl tracking-tighter text-[#FFCC00]">Esse</span>
+                        <span class="font-black text-4xl tracking-tighter text-white">Kuning</span>
+                    </div>
+                    <div class="text-[10px] text-[#D4AF37] -mt-1 tracking-[1px] font-medium">EST 2023</div>
+                </div>
+
+                <!-- Menu -->
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#pricing" class="hover:text-[#D4AF37] transition-colors">Harga</a>
+                    <a href="#benefits" class="hover:text-[#D4AF37] transition-colors">Keunggulan</a>
+                    <a href="#how-to-join" class="hover:text-[#D4AF37] transition-colors">Cara Bergabung</a>
+                    <a href="#faq" class="hover:text-[#D4AF37] transition-colors">FAQ</a>
+                </div>
+
+                <div class="flex items-center gap-x-3">
+                    <a href="https://t.me/+46t4c3bjiq8yZTg1" target="_blank"
+                       class="hidden sm:flex items-center gap-x-2 px-5 py-2.5 text-sm font-semibold border border-white/20 hover:bg-white/5 rounded-3xl transition-all active:scale-[0.985]">
+                        <i class="fa-brands fa-telegram text-lg"></i>
+                        <span>Info Channel</span>
+                    </a>
+                    
+                    <a href="#pricing"
+                       class="px-6 py-2.5 bg-white text-[#0a0a0a] font-semibold text-sm rounded-3xl hover:bg-[#D4AF37] transition-all flex items-center gap-x-2 active:scale-[0.985]">
+                        <span>Lihat Harga</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="pt-20 pb-16 md:pt-24 md:pb-20 relative overflow-hidden">
+        <div class="absolute inset-0 subtle-grid opacity-40"></div>
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-3xl bg-white/5 border border-white/10 mb-6">
+                <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                <span class="text-xs font-semibold tracking-widest text-emerald-400">SEJAK 2023 • 5000++ MEDIA</span>
+            </div>
+            
+            <h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-4">
+                Premium Deepfake.<br>
+                <span class="gold-text">Cersex Eksklusif.</span><br>
+                Tanpa Batas.
+            </h1>
+            
+            <p class="max-w-xl mx-auto text-xl text-white/70 mb-8">
+                Koleksi editan & deepfake artis Indonesia kualitas tertinggi.<br>
+                Update harian + custom face swap video sesuai requestmu.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#pricing" 
+                   class="group w-full sm:w-auto px-9 py-4 bg-white text-[#0a0a0a] font-semibold rounded-3xl flex items-center justify-center gap-x-3 text-lg hover:bg-[#D4AF37] active:scale-[0.985] transition-all">
+                    <span>Pilih Paket Sekarang</span>
+                    <i class="fa-solid fa-arrow-right group-active:translate-x-0.5 transition"></i>
+                </a>
+                
+                <a href="https://t.me/+46t4c3bjiq8yZTg1" target="_blank"
+                   class="w-full sm:w-auto px-8 py-4 border border-white/30 hover:bg-white/5 font-medium rounded-3xl flex items-center justify-center gap-x-3 text-lg transition-all active:scale-[0.985]">
+                    <i class="fa-brands fa-telegram text-xl"></i>
+                    <span>Tanya Admin via Telegram</span>
+                </a>
+            </div>
+            
+            <div class="mt-8 flex items-center justify-center gap-x-8 text-sm text-white/50">
+                <div class="flex items-center gap-x-1.5">
+                    <i class="fa-solid fa-check text-emerald-400"></i>
+                    <span>Update Harian</span>
+                </div>
+                <div class="flex items-center gap-x-1.5">
+                    <i class="fa-solid fa-check text-emerald-400"></i>
+                    <span>Unlimited Download</span>
+                </div>
+                <div class="flex items-center gap-x-1.5">
+                    <i class="fa-solid fa-check text-emerald-400"></i>
+                    <span>Custom Face Swap</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST / STATS -->
+    <div class="border-y border-white/10 py-5">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-4 text-center text-sm">
+                <div>
+                    <span class="font-semibold text-[#D4AF37]">Est. 2023</span>
+                    <span class="text-white/50"> • Premium sejak awal</span>
+                </div>
+                <div class="hidden md:block w-px h-3 bg-white/20"></div>
+                <div>
+                    <span class="font-semibold">5000++</span> 
+                    <span class="text-white/50">media HD & terus bertambah</span>
+                </div>
+                <div class="hidden md:block w-px h-3 bg-white/20"></div>
+                <div>
+                    <span class="font-semibold">Private & Aman</span>
+                    <span class="text-white/50"> • Akses via Telegram</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="max-w-7xl mx-auto px-6 pt-16 pb-20">
+        <div class="text-center mb-12">
+            <div class="inline-block px-4 py-1 rounded-3xl bg-white/5 text-xs font-semibold tracking-[1.5px] mb-3">HARGA TRANSPARAN • TANPA RIBET</div>
+            <h2 class="section-header tracking-tighter">Pilih Paket yang<br>Tepat Untukmu</h2>
+            <p class="mt-3 text-white/60 max-w-md mx-auto">Semua paket sudah termasuk update rutin & akses komunitas eksklusif.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-[1100px] mx-auto">
+            
+            <!-- VVIP+ Card -->
+            <div class="pricing-card popular border border-[#D4AF37]/60 bg-[#111] rounded-3xl p-8 flex flex-col">
+                <div class="flex items-start justify-between mb-6">
+                    <div>
+                        <div class="inline-flex items-center gap-x-2 px-4 py-1 bg-[#D4AF37] text-[#0a0a0a] rounded-2xl text-xs font-bold tracking-wider">VVIP+</div>
+                        <div class="mt-3">
+                            <span class="text-5xl font-extrabold tracking-tighter">180.000</span>
+                            <span class="text-white/50 text-lg font-medium">IDR</span>
+                        </div>
+                        <div class="text-xs text-white/50 -mt-1">sekali bayar • akses selamanya</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="px-3 py-1 bg-emerald-500/10 text-emerald-400 text-[10px] font-bold rounded-2xl inline-block">BEST VALUE</div>
+                    </div>
+                </div>
+                
+                <div class="space-y-3.5 flex-1 text-[15px]">
+                    <div class="benefit-item flex gap-3">
+                        <i class="fa-solid fa-check text-[#D4AF37] mt-1.5 w-4"></i>
+                        <span>Update harian <strong>5000++ media HD</strong> premium</span>
+                    </div>
+                    <div class="benefit-item flex gap-3">
+                        <i class="fa-solid fa-check text-[#D4AF37] mt-1.5 w-4"></i>
+                        <span><strong>Grup Skandal Bokep</strong> + <strong>Grup Khusus Cersex</strong></span>
+                    </div>
+                    <div class="benefit-item flex gap-3">
+                        <i class="fa-solid fa-check text-[#D4AF37] mt-1.5 w-4"></i>
+                        <span><strong>Unlimited download</strong> kapan saja & di mana saja</span>
+                    </div>
+                    <div class="benefit-item flex gap-3 bg-white/5 -mx-2 px-3 py-2.5 rounded-2xl border border-white/10">
+                        <i class="fa-solid fa-magic text-[#D4AF37] mt-1 w-4"></i>
+                        <div>
+                            <span class="font-semibold">3× Gratis Custom <span class="text-[#D4AF37]">Face Swap</span> Video Edit</span><br>
+                            <span class="text-xs text-white/60">Pilih wajah selebriti + scene sesuai keinginanmu</span>
+                        </div>
+                    </div>
+                    <div class="benefit-item flex gap-3">
+                        <i class="fa-solid fa-check text-[#D4AF37] mt-1.5 w-4"></i>
+                        <span><strong>1× Gratis Request</strong> Custom Cerita Sex / RPF Selebriti</span>
+                    </div>
+                </div>
+                
+                <a href="https://t.me/+46t4c3bjiq8yZTg1" target="_blank"
+                   class="mt-8 block w-full py-4 bg-[#D4AF37] hover:bg-[#C9A227] active:bg-[#B8972E] transition-all text-center text-[#0a0a0a] font-bold rounded-3xl text-lg tracking-tight">
+                    Pilih VVIP+ • Mulai Sekarang
+                </a>
+                <p class="text-center text-[10px] text-white/40 mt-3">Paling banyak dipilih • Value terbaik</p>
+            </div>
+
+            <!-- VVIP Card -->
+            <div class="pricing-card border border-white/10 bg-[#111] rounded-3xl p-8 flex flex-col">
+                <div class="mb-6">
+                    <div class="inline-flex items-center gap-x-2 px-4 py-1 bg-white/10 text-white rounded-2xl text-xs font-bold tracking-wider">VVIP</div>
+                    <div class="mt-3">
+                        <span class="text-5xl font-extrabold tracking-tighter">150.000</span>
+                        <span class="text-white/50 text-lg font-medium">IDR</span>
+                    </div>
+                    <div class="text-xs text-white/50 -mt-1">sekali bayar • akses selamanya</div>
+                </div>
+                
+                <div class="space-y-3.5 flex-1 text-[15px]">
+                    <div class="benefit-item flex gap-3">
+                        <i class="fa-solid fa-check text-[#D4AF37] mt-1.5 w-4"></i>
+                        <span>Update harian <strong>5000++ media HD</strong> premium</span>
+                    </div>
+                    <div class="benefit-item flex gap-3">
+                        <i class="fa-solid fa-check text-[#D4AF37] mt-1.5 w-4"></i>
+                        <span><strong>Grup Skandal Bokep</strong> eksklusif</span>
+                    </div>
+                    <div class="benefit-item flex gap-3">
+                        <i class="fa-solid fa-check text-[#D4AF37] mt-1.5 w-4"></i>
+                        <span><strong>Unlimited download</strong></span>
+                    </div>
+                    <div class="benefit-item flex gap-3 bg-white/5 -mx-2 px-3 py-2.5 rounded-2xl border border-white/10">
+                        <i class="fa-solid fa-magic text-[#D4AF37] mt-1 w-4"></i>
+                        <div>
+                            <span class="font-semibold">1× Gratis Custom <span class="text-[#D4AF37]">Face Swap</span> Video Edit</span><br>
+                            <span class="text-xs text-white/60">Pilih wajah selebriti + scene sesuai keinginanmu</span>
+                        </div>
+                    </div>
+                    <div class="benefit-item flex gap-3">
+                        <i class="fa-solid fa-check text-[#D4AF37] mt-1.5 w-4"></i>
+                        <span><strong>1× Gratis Request</strong> Custom Cerpen Sex Selebriti</span>
+                    </div>
+                </div>
+                
+                <a href="https://t.me/+46t4c3bjiq8yZTg1" target="_blank"
+                   class="mt-8 block w-full py-4 border border-white/30 hover:bg-white/5 active:bg-white/10 transition-all text-center font-semibold rounded-3xl text-lg">
+                    Pilih VVIP
+                </a>
+            </div>
+
+            <!-- VIP Card -->
+            <div class="pricing-card border border-white/10 bg-[#111] rounded-3xl p-8 flex flex-col">
+                <div class="mb-6">
+                    <div class="inline-flex items-center gap-x-2 px-4 py-1 bg-white/10 text-white rounded-2xl text-xs font-bold tracking-wider">VIP</div>
+                    <div class="mt-3">
+                        <span class="text-5xl font-extrabold tracking-tighter">80.000</span>
+                        <span class="text-white/50 text-lg font-medium">IDR</span>
+                    </div>
+                    <div class="text-xs text-white/50 -mt-1">sekali bayar • akses selamanya</div>
+                </div>
+                
+                <div class="space-y-3.5 flex-1 text-[15px]">
+                    <div class="benefit-item flex gap-3">
+                        <i class="fa-solid fa-check text-[#D4AF37] mt-1.5 w-4"></i>
+                        <span><strong>4000++ media</strong> premium, update 3× seminggu</span>
+                    </div>
+                    <div class="benefit-item flex gap-3 bg-white/5 -mx-2 px-3 py-2.5 rounded-2xl border border-white/10">
+                        <i class="fa-solid fa-magic text-[#D4AF37] mt-1 w-4"></i>
+                        <div>
+                            <span class="font-semibold">1× Gratis Custom <span class="text-[#D4AF37]">Face Swap</span> Video Edit</span><br>
+                            <span class="text-xs text-white/60">Maks. 30 detik • Pilih wajah selebriti</span>
+                        </div>
+                    </div>
+                    <div class="benefit-item flex gap-3 text-white/50">
+                        <i class="fa-solid fa-times mt-1.5 w-4"></i>
+                        <span>Tidak tersedia untuk di-download (view only)</span>
+                    </div>
+                </div>
+                
+                <a href="https://t.me/+46t4c3bjiq8yZTg1" target="_blank"
+                   class="mt-8 block w-full py-4 border border-white/30 hover:bg-white/5 active:bg-white/10 transition-all text-center font-semibold rounded-3xl text-lg">
+                    Pilih VIP • Mulai Ringan
+                </a>
+                <p class="text-center text-[10px] text-white/40 mt-3">Cocok untuk mencoba dulu</p>
+            </div>
+        </div>
+        
+        <p class="text-center text-xs text-white/40 mt-8">Harga sudah termasuk akses selamanya. Tidak ada biaya bulanan tersembunyi.</p>
+    </section>
+
+    <!-- BENEFITS / KEUNGGULAN -->
+    <section id="benefits" class="bg-[#111] py-16 border-y border-white/10">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <h3 class="text-3xl font-bold tracking-tight">Kenapa Member Memilih Esse Kuning?</h3>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="bg-[#0a0a0a] border border-white/10 rounded-3xl p-6">
+                    <i class="fa-solid fa-sync text-3xl text-[#D4AF37] mb-4"></i>
+                    <h4 class="font-semibold mb-1.5">Update Harian Tanpa Henti</h4>
+                    <p class="text-sm text-white/60">5000++ media baru setiap hari di tier tertinggi. Koleksi terus bertambah.</p>
+                </div>
+                <div class="bg-[#0a0a0a] border border-white/10 rounded-3xl p-6">
+                    <i class="fa-solid fa-magic text-3xl text-[#D4AF37] mb-4"></i>
+                    <h4 class="font-semibold mb-1.5">Custom Face Swap Video</h4>
+                    <p class="text-sm text-white/60">Gratis request video dengan face swap sesuai wajah & scene yang kamu inginkan.</p>
+                </div>
+                <div class="bg-[#0a0a0a] border border-white/10 rounded-3xl p-6">
+                    <i class="fa-solid fa-download text-3xl text-[#D4AF37] mb-4"></i>
+                    <h4 class="font-semibold mb-1.5">Unlimited Download</h4>
+                    <p class="text-sm text-white/60">Simpan semua konten favoritmu tanpa batas di perangkat pribadi.</p>
+                </div>
+                <div class="bg-[#0a0a0a] border border-white/10 rounded-3xl p-6">
+                    <i class="fa-solid fa-book text-3xl text-[#D4AF37] mb-4"></i>
+                    <h4 class="font-semibold mb-1.5">Cersex & RPF Eksklusif</h4>
+                    <p class="text-sm text-white/60">Cerita panjang sensual dengan karakter natural & malu-malu khas Indonesia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="max-w-5xl mx-auto px-6 py-12 border-t border-white/10">
+        <div class="text-center mb-8">
+            <h3 class="text-2xl font-bold tracking-tight">Apa Kata Member Kami</h3>
+            <p class="text-white/50 text-sm mt-1">Real feedback dari client Esse Kuning</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-4">
+            <div class="bg-[#111] border border-white/10 rounded-3xl p-5 text-sm">
+                <div class="flex items-center gap-x-2 mb-3">
+                    <div class="w-8 h-8 bg-white/10 rounded-full"></div>
+                    <div class="font-medium">@member</div>
+                </div>
+                <p class="text-white/80">"Gila mirip banget mantap. 3 lagi bang, gilak mantap banget editannya."</p>
+            </div>
+            <div class="bg-[#111] border border-white/10 rounded-3xl p-5 text-sm">
+                <div class="flex items-center gap-x-2 mb-3">
+                    <div class="w-8 h-8 bg-white/10 rounded-full"></div>
+                    <div class="font-medium">@member</div>
+                </div>
+                <p class="text-white/80">"Mantap nih ini. Bisa buat video panjang Nagita Slavina, bisa banget donk."</p>
+            </div>
+            <div class="bg-[#111] border border-white/10 rounded-3xl p-5 text-sm">
+                <div class="flex items-center gap-x-2 mb-3">
+                    <div class="w-8 h-8 bg-white/10 rounded-full"></div>
+                    <div class="font-medium">@member</div>
+                </div>
+                <p class="text-white/80">"Mantap bro, respon adminnya cepat. Kualitas editan juara."</p>
+            </div>
+        </div>
+        
+        <div class="text-center mt-6">
+            <a href="https://t.me/punchpop33" target="_blank" 
+               class="inline-flex items-center gap-x-2 text-sm px-5 py-2.5 border border-white/20 hover:bg-white/5 rounded-3xl">
+                <i class="fa-brands fa-telegram"></i>
+                <span>Lihat lebih banyak testimoni & video di Telegram</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- HOW TO JOIN -->
+    <section id="how-to-join" class="max-w-4xl mx-auto px-6 py-16">
+        <div class="text-center mb-10">
+            <h3 class="text-3xl font-bold tracking-tight">Cara Bergabung Sangat Mudah</h3>
+            <p class="text-white/60 mt-2">Hanya butuh 3 langkah</p>
+        </div>
+        
+        <div class="max-w-2xl mx-auto space-y-4">
+            <div class="flex gap-5 bg-[#111] border border-white/10 rounded-3xl p-6 items-start">
+                <div class="w-9 h-9 flex-shrink-0 bg-[#D4AF37] text-[#0a0a0a] font-black rounded-2xl flex items-center justify-center text-xl">1</div>
+                <div>
+                    <div class="font-semibold">Pilih paket & hubungi admin</div>
+                    <div class="text-sm text-white/60">Klik tombol “Pilih Paket” di atas → chat admin via Telegram</div>
+                </div>
+            </div>
+            
+            <div class="flex gap-5 bg-[#111] border border-white/10 rounded-3xl p-6 items-start">
+                <div class="w-9 h-9 flex-shrink-0 bg-[#D4AF37] text-[#0a0a0a] font-black rounded-2xl flex items-center justify-center text-xl">2</div>
+                <div class="flex-1">
+                    <div class="font-semibold mb-2">Pilih metode pembayaran</div>
+                    
+                    <div class="space-y-3 text-sm">
+                        <!-- BCA Transfer -->
+                        <div class="bg-white/5 border border-white/10 rounded-2xl p-4">
+                            <div class="flex items-center gap-x-2 font-semibold">
+                                <i class="fa-solid fa-university text-[#D4AF37]"></i>
+                                <span>Transfer BCA</span>
+                            </div>
+                            <div class="text-white/70 mt-1 text-xs">Hubungi admin <a href="https://t.me/punchpop33" target="_blank" class="text-[#D4AF37] underline">@punchpop33</a> untuk nomor rekening & konfirmasi</div>
+                        </div>
+                        
+                        <!-- QRIS -->
+                        <div class="bg-white/5 border border-white/10 rounded-2xl p-4">
+                            <div class="flex items-center gap-x-2 font-semibold">
+                                <i class="fa-solid fa-qrcode text-[#D4AF37]"></i>
+                                <span>QRIS (Pembayaran Nasional)</span>
+                            </div>
+                            <div class="text-white/70 mt-1 text-xs">Scan QRIS yang diberikan admin atau gunakan QRIS resmi Esse (NMID: ID1026485060804). Konfirmasi setelah bayar.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex gap-5 bg-[#111] border border-white/10 rounded-3xl p-6 items-start">
+                <div class="w-9 h-9 flex-shrink-0 bg-[#D4AF37] text-[#0a0a0a] font-black rounded-2xl flex items-center justify-center text-xl">3</div>
+                <div>
+                    <div class="font-semibold">Konfirmasi & dapatkan akses</div>
+                    <div class="text-sm text-white/60">Kirim bukti pembayaran ke admin. Setelah diverifikasi, kamu akan mendapat link invite grup private.</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-8 max-w-2xl mx-auto bg-red-950/30 border border-red-900/50 text-red-300 text-sm rounded-3xl p-5">
+            <div class="flex gap-3">
+                <i class="fa-solid fa-exclamation-triangle mt-0.5"></i>
+                <div>
+                    <strong>Penting:</strong> Hanya pesan yang dibalas / dikonfirmasi yang akan diproses. 
+                    Jika hanya read pesan tanpa konfirmasi pembayaran → otomatis diblokir.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="max-w-3xl mx-auto px-6 pb-20">
+        <h3 class="text-center text-3xl font-bold tracking-tight mb-8">Pertanyaan yang Sering Ditanyakan</h3>
+        
+        <div class="space-y-3">
+            <details class="group bg-[#111] border border-white/10 rounded-3xl px-6 py-5">
+                <summary class="font-semibold cursor-pointer flex justify-between items-center">
+                    Apakah harga ini sekali bayar atau langganan bulanan?
+                    <i class="fa-solid fa-chevron-down group-open:rotate-180 transition"></i>
+                </summary>
+                <p class="mt-3 text-white/70 text-sm">Harga yang tertera adalah <strong>sekali bayar untuk akses selamanya</strong>. Tidak ada biaya bulanan atau tersembunyi.</p>
+            </details>
+            
+            <details class="group bg-[#111] border border-white/10 rounded-3xl px-6 py-5">
+                <summary class="font-semibold cursor-pointer flex justify-between items-center">
+                    Apa itu Custom Face Swap Video Edit?
+                    <i class="fa-solid fa-chevron-down group-open:rotate-180 transition"></i>
+                </summary>
+                <p class="mt-3 text-white/70 text-sm">Kamu bisa request video pendek dengan menukar wajah selebriti pilihanmu ke dalam scene yang kamu inginkan. Ini adalah fitur deepfake premium yang gratis untuk member VVIP+ (3x) dan VVIP (1x).</p>
+            </details>
+            
+            <details class="group bg-[#111] border border-white/10 rounded-3xl px-6 py-5">
+                <summary class="font-semibold cursor-pointer flex justify-between items-center">
+                    Apakah konten bisa di-download?
+                    <i class="fa-solid fa-chevron-down group-open:rotate-180 transition"></i>
+                </summary>
+                <p class="mt-3 text-white/70 text-sm">Ya, untuk tier VVIP+ dan VVIP bisa download unlimited. Tier VIP hanya bisa dilihat (view only) dan tidak tersedia untuk di-download.</p>
+            </details>
+            
+            <details class="group bg-[#111] border border-white/10 rounded-3xl px-6 py-5">
+                <summary class="font-semibold cursor-pointer flex justify-between items-center">
+                    Bagaimana cara request custom video atau cerita?
+                    <i class="fa-solid fa-chevron-down group-open:rotate-180 transition"></i>
+                </summary>
+                <p class="mt-3 text-white/70 text-sm">Setelah bergabung, kamu bisa langsung request ke admin melalui grup. Request akan diproses sesuai slot yang tersedia.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <div class="bg-[#111] border-t border-white/10 py-14">
+        <div class="max-w-xl mx-auto text-center px-6">
+            <h3 class="text-3xl font-bold tracking-tight">Siap bergabung dengan komunitas premium?</h3>
+            <p class="mt-3 text-white/60">Mulai nikmati ribuan konten eksklusif + custom face swap hari ini.</p>
+            
+            <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#pricing" class="px-10 py-4 bg-white text-[#0a0a0a] font-bold rounded-3xl text-lg active:scale-[0.985] transition">Lihat Semua Paket</a>
+                <a href="https://t.me/+46t4c3bjiq8yZTg1" target="_blank" 
+                   class="px-8 py-4 border border-white/30 hover:bg-white/5 font-semibold rounded-3xl flex items-center justify-center gap-x-2 text-lg">
+                    <i class="fa-brands fa-telegram"></i>
+                    <span>Chat Admin Sekarang</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-10 text-center text-xs text-white/40">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex justify-center gap-x-6 mb-4 text-white/60">
+                <a href="#" class="hover:text-white">X / Twitter</a>
+                <a href="https://t.me/+46t4c3bjiq8yZTg1" class="hover:text-white">Telegram Info</a>
+            </div>
+            
+            <p class="max-w-md mx-auto">
+                Esse Kuning © 2023–2026. Semua konten adalah karya fiksi/artistik/role-play untuk hiburan dewasa. 
+                Tidak ada afiliasi dengan artis atau selebriti asli. Semua individu yang digambarkan berusia 18+.
+            </p>
+            <p class="mt-4 text-[10px]">Dilarang mendistribusikan ulang konten tanpa izin. Pelanggaran akan ditindak.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('nav-scrolled', 'border-b', 'border-white/10');
+            } else {
+                navbar.classList.remove('nav-scrolled', 'border-b', 'border-white/10');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Tailwind script
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent-gold', '#D4AF37');
+        }
+        
+        window.onload = initializeTailwind;
+    </script>
+</body>
+</html>
